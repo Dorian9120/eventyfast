@@ -1,0 +1,105 @@
+.event-details-container {
+  height: 100vh;
+}
+
+.event-details {
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 70%;
+  margin: 20px auto;
+  font-family: "Arial", sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+  .event-details {
+    width: 85%;
+  }
+}
+
+.event-details h2 {
+  color: #333;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.event-details p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.event-details .buttons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.event-details .btn-participate,
+.event-details .btn-chat {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background-color: #3498db;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.event-details .btn-participate:hover,
+.event-details .btn-chat:hover {
+  background-color: #2980b9;
+}
+.event-details .btn-participate {
+  display: block;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .event-details .btn-participate {
+    height: 50px;
+  }
+}
+
+.event-details .btn-chat {
+  background-color: #2ecc71;
+  height: 50px;
+  text-decoration: none;
+}
+
+.event-details .btn-chat:hover {
+  background-color: #27ae60;
+}
+
+.event-details .event-full {
+  background-color: #fdecea;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.already-participate {
+  position: relative;
+  right: 25%;
+  background-color: #f0f8ff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+}

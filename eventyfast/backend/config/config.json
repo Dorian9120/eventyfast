@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "root",
+    "password": "test",
+    "database": "myapp_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "dialectOptions": {
+      "connectTimeout": 60000
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": "test",
+    "database": "myapp_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "test",
+    "database": "myapp_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
+

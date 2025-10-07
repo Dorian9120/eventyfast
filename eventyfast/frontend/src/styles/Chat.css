@@ -1,0 +1,124 @@
+.user-chats-global-container {
+  height: 100vh;
+}
+
+.user-chats-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-chats-container h2 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.user-chats-container p {
+  font-size: 18px;
+  color: #555;
+}
+
+.chat-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-item p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.chat-item strong {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.response-item {
+  background-color: #f1f1f1;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.chat-item p + .response-item p {
+  font-style: italic;
+  color: #888;
+}
+
+.response-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+.response-item strong {
+  color: #2196f3;
+}
+
+.tabs button {
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.tabs button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.reply-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.reply-container textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: none;
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.reply-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.reply-container button {
+  padding: 10px 20px;
+  font-size: 14px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reply-container button:hover {
+  background-color: #0056b3;
+}
+
+.reply-container button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

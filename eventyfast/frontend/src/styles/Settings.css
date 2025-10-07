@@ -1,0 +1,64 @@
+.settings-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  margin: 30px 0;
+  margin-bottom: 30px;
+}
+
+.settings-card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  height: auto;
+  margin: auto;
+  width: 100%;
+  max-width: 800px;
+}
+
+.settings-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.tab-nav {
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 16px;
+}
+
+/* Conteneur des boutons */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+/* Style de chaque bouton */
+.nav-button {
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #6b7280;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #3b82f6;
+}
+
+.active-tab {
+  color: #3b82f6;
+  border-bottom: 2px solid #3b82f6;
+}
+
+/* Contenu des onglets */
+.tab-content {
+  margin-top: 24px;
+}

@@ -1,0 +1,166 @@
+.security-settings-container {
+  height: 100%;
+}
+
+.security-settings {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.security-settings h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.security-settings h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.enable-2fa-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.enable-2fa-checkbox input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.enable-2fa-checkbox label {
+  margin-bottom: 0;
+}
+
+.success-message,
+.disabled-message {
+  color: #fff;
+  font-size: 14px;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success-message {
+  color: #4caf50;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.disabled-message {
+  color: #f44336;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.qr-code-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.qr-code-container p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.secret-key {
+  font-size: 14px;
+  color: #007acc;
+  background-color: #f4f4f4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  .secret-key {
+    width: 100%;
+    word-break: break-word;
+    padding: 0;
+  }
+}
+
+.verify-2fa {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verify-2fa input {
+  width: calc(100% - 100px);
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .verify-2fa input {
+    width: 90%;
+    word-break: break-word;
+  }
+}
+
+.verify-2fa button {
+  padding: 10px 20px;
+  background-color: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.verify-2fa button:hover {
+  background-color: #005fa3;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.info-text-2fa .info-icon {
+  font-size: 22px;
+  color: #007bff;
+  margin-right: 8px;
+}
+
+.info-text-2fa {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #f0f8ff;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 14px;
+  color: #555;
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .info-text-2fa {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+}

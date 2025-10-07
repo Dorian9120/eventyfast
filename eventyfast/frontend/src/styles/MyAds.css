@@ -1,0 +1,297 @@
+.my-ads-container {
+  height: auto;
+  min-height: 100vh;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+.ads-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  padding: 0 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .ads-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.ad-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  min-width: 320px;
+  max-width: 600px;
+  min-height: 400px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ad-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.ad-item h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.ad-item p {
+  font-size: 0.95rem;
+  gap: 3px;
+  padding: 5px 0;
+  margin: 0 auto;
+  width: 90%;
+  color: #555;
+  display: flex;
+}
+
+.ad-item p svg {
+  margin-right: 8px;
+  color: #555;
+}
+
+.ad-item .delete-event {
+  position: relative;
+  left: 93%;
+  background: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .ad-item .delete-event {
+    left: 90%;
+  }
+}
+
+.ad-item .delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.ad-item .trash-icon {
+  color: red;
+  font-size: 30px;
+}
+
+.ad-item .trash-icon:hover {
+  transform: scale(1.1);
+}
+
+.ad-item-btn1 {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  width: 100%;
+  margin: 30px 0;
+}
+
+.ad-item-btn1 button {
+  background-color: rgb(44, 62, 80);
+  color: white;
+  width: 170px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: 2px solid rgba(20, 20, 20, 0.705);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .ad-item-btn1 button {
+    max-width: 140px;
+  }
+}
+
+.ad-item-btn1 .evt-participant-btn {
+  background: transparent;
+  color: #000;
+  padding: 12px 20px;
+  text-decoration: none;
+  border: 2px solid rgba(20, 20, 20, 0.705);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+.ad-item-btn1 .evt-participant-btn:hover {
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(44, 62, 80, 0.774);
+  transform: scale(0.94);
+}
+
+.ad-item-btn1 button:hover {
+  border: 2px solid rgba(20, 20, 20, 0.705);
+  background-color: rgba(44, 62, 80, 0.774);
+  transform: scale(0.94);
+}
+
+.create-ad-btn {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-ad-btn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.h2-my-ads {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2.h2-my-ads + .create-ad-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ad-item h4 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.event-passed-my-ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8b8b8;
+  border: 2px solid #f5a9a9;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.event-passed-my-ads button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.event-passed-my-ads button:hover {
+  background-color: #b71c1c;
+}
+
+@media screen and (max-width: 768px) {
+  .image-preview-myads {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.delete-image-btn {
+  margin: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  left: 35%;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .delete-image-btn {
+    display: block;
+    justify-content: center;
+    left: 0;
+  }
+}
+
+.delete-image-btn:hover {
+  background-color: #d32f2f;
+}
+
+.delete-image-btn:active {
+  background-color: #b71c1c;
+}
+
+.delete-image-btn svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+.image-myads {
+  width: 100%;
+  max-height: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .skeleton-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+
+.FaCamera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 33%;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 10px;
+}

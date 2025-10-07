@@ -1,0 +1,29 @@
+.notifs-global-container {
+  height: 100vh;
+}
+.notifs-container {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.notifs-container h2 {
+  font-size: 2rem;
+  color: #2d3a3d;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.notifs-container p {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

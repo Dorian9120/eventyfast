@@ -1,0 +1,174 @@
+.profile-container {
+  padding: 40px;
+  background-color: white;
+  max-width: 500px;
+  width: 100%;
+  border: 2px solid rgba(156, 153, 153, 0.555);
+  position: relative;
+  left: 50%;
+  margin: 30px 0;
+  margin-bottom: 30px;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+.profile-title {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group .password-label {
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline;
+}
+
+.form-group .password-label:hover {
+  opacity: 0.9;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.input-field-dateOfBirth::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.form-group .input-field-dateOfBirth:focus {
+  border: 1px solid #ddd;
+}
+
+.profile-form .form-group input[type="tel"],
+.profile-form .form-group input[type="email"] {
+  background: none;
+  border: 1px solid rgba(199, 196, 196, 0.26);
+  cursor: default;
+}
+
+.form-group .input-field {
+  width: calc(100% - 20px);
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(199, 196, 196, 0.26);
+  transition: 0.3s ease;
+}
+
+.form-group .input-field:focus:not([type="date"], [type="tel"]) {
+  border: 1px solid #0072ff;
+}
+
+.form-group .error-message {
+  color: red;
+  font-size: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons {
+    gap: 20px;
+  }
+}
+
+.submit-button {
+  height: 50px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .submit-button {
+    max-width: 150px;
+    min-width: 100px;
+    height: 60px;
+  }
+}
+
+.submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(0, 114, 255, 0.5);
+}
+
+.delete-button {
+  height: auto;
+  max-width: 200px;
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .delete-button {
+    max-width: 150px;
+    min-width: 100px;
+    max-height: 60px;
+  }
+}
+.delete-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(255, 65, 108, 0.5);
+}
+
+.form-group .verify-button-profile {
+  display: flex;
+  justify-content: center;
+  width: calc(110% - 43px);
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin-top: 20px;
+  background: transparent;
+  border: 2px solid rgba(20, 20, 20, 0.705);
+  border-radius: 8px;
+  color: black;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.form-group .verify-button-profile:hover {
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: rgba(44, 62, 80, 0.774);
+  transform: scale(0.98);
+}

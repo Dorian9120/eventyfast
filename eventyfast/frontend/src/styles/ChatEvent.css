@@ -1,0 +1,78 @@
+.chat--global-container {
+  height: 100vh;
+}
+
+.chat-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.chat-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chat-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.chat-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-form button:hover {
+  background: #0056b3;
+}
+
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.message {
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-content {
+  font-size: 14px;
+  color: #333;
+}
+
+.message-date {
+  font-size: 12px;
+  color: gray;
+}
+
+.loading {
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+}
+
+.no-messages {
+  text-align: center;
+  font-style: italic;
+  color: gray;
+}

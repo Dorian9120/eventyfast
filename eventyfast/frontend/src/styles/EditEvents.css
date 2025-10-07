@@ -1,0 +1,47 @@
+/* Exemple de base pour le formulaire d'édition */
+.edit-event-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-event-form h2 {
+    text-align: center;
+  }
+  
+  .edit-event-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-event-form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .edit-event-form input, 
+  .edit-event-form textarea {
+    margin-bottom: 20px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  .edit-event-form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .edit-event-form button[type="button"] {
+    background-color: #f44336;
+  }
+  
+  .edit-event-form button:hover {
+    background-color: #45a049;
+  }
+  

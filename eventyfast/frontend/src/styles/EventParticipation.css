@@ -1,0 +1,111 @@
+.event-participation-container {
+  height: 100vh;
+  margin-bottom: 30px;
+}
+.event-participation {
+  background-color: #f4f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.event-participation .title {
+  font-size: 2rem;
+  color: #2d3a3d;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.event-participation .no-events-message {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-participation .event-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.event-participation .event-item {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.event-participation .event-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-participation .event-title {
+  font-size: 1.5rem;
+  color: #2d3a3d;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.event-participation .event-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.event-participation .event-date,
+.event-location,
+.event-organizers {
+  font-size: 0.9rem;
+  color: #777;
+  font-style: italic;
+}
+
+.event-participation .event-date {
+  font-style: italic;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.event-title,
+.event-description,
+.event-date,
+.event-location,
+.event-organizers {
+  line-height: 1.6;
+}
+
+.event-participation .cancel-participation-btn {
+  background-color: #f44336;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-participation-btn:hover {
+  background-color: #d32f2f;
+}
+
+.event-participation .error-message {
+  color: #ff1744;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

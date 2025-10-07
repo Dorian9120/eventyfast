@@ -1,0 +1,102 @@
+.edit-event-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #2c3e50, #1a252f);
+  padding: 20px;
+}
+
+.edit-event {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 600px;
+  padding: 30px;
+  text-align: left;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+.edit-event h2 {
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #f1c40f;
+}
+
+.form-edit-event {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-edit-event label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #ecf0f1;
+}
+
+.form-edit-event input,
+.form-edit-event textarea {
+  margin-top: 5px;
+  width: calc(100% - 30px);
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s ease-in-out;
+}
+
+.form-edit-event input:focus,
+.form-edit-event textarea:focus {
+  background: rgba(255, 255, 255, 0.2);
+  outline: none;
+  box-shadow: 0 0 8px rgba(241, 196, 15, 0.8);
+}
+
+.form-edit-event button {
+  background: linear-gradient(135deg, #f39c12, #e67e22);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.form-edit-event button:hover {
+  background: linear-gradient(135deg, #e67e22, #d35400);
+  transform: scale(1.05);
+}
+
+.edit-event::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(241, 196, 15, 0.3), transparent);
+  top: 20px;
+  left: -50px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.success-message-edit-event {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+}

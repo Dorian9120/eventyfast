@@ -1,0 +1,69 @@
+.edit-user-global-container {
+  height: 100vh;
+}
+
+.edit-user-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-user-title {
+  text-align: center;
+  color: #333;
+}
+
+.edit-user-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.edit-user-label {
+  font-weight: bold;
+}
+
+.edit-user-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.edit-user-select {
+  width: calc(100%);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.edit-user-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-user-button:hover {
+  background: #0056b3;
+}
+
+.edit-user-error-message {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,77 @@
+.connection-history-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-height: 100vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.no-history-message {
+  text-align: center;
+  color: #888;
+}
+
+.history-list {
+  max-height: 400px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.history-item {
+  border: 1px solid #e0e0e0;
+  padding: 0 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  background-color: #fafafa;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.history-item:hover {
+  background-color: #f0f0f0;
+}
+
+.history-details {
+  color: #333;
+}
+
+.clear-history-button-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.clear-history-button {
+  padding: 12px 24px;
+  background-color: #e53935;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.clear-history-button:hover {
+  background-color: #d32f2f;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 20px;
+}

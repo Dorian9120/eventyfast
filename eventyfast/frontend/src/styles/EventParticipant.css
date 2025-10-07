@@ -1,0 +1,92 @@
+.event-participant-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .event-participant-container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.event-participant {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 900px;
+}
+
+@media screen and (max-width: 768px) {
+  .event-participant {
+    width: 100%;
+  }
+}
+
+.event-participant h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.event-participant table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .event-participant table {
+    overflow-x: scroll;
+  }
+}
+
+.event-participant thead {
+  background-color: #007bff;
+  color: black;
+}
+
+.event-participant th,
+td {
+  text-align: left;
+  padding: 12px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .event-participant th,
+  td {
+    padding: 5px;
+  }
+}
+
+.event-participant th {
+  font-weight: bold;
+}
+
+.event-participant td {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-participant tr:hover td {
+  background-color: #e9f2ff;
+}
+
+.event-participant div {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+div.no-participants {
+  font-size: 1.5rem;
+  color: #ff6347;
+  margin-top: 20px;
+}
