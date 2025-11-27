@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: react_app
+    ports:
+      - "3000:80"   # 3000 sur l'hôte → 80 dans le conteneur
+    networks:
+      - mon_reseau
+
+  db:
+    image: mysql:5.7
+    container_name: mysql_db
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydatabase
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - mon_reseau
+
+networks:
+  mon_reseau:
+
+volumes:
+  db_data:
